@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="data:," />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <script type="module" src="/src/app.ts"></script>
+    <title>Noa's</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <nav class="main-nav">
+        <a class="main-nav__brand" href="/"> Noa's </a>
+        <ul class="main-nav__items">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" href="#home">Home</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#about">About</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <button class="main-nav__menu">
+          <svg
+            width="24"
+            height="20"
+            viewBox="0 0 24 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="line"
+              id="line-1"
+              d="M2 2H22"
+              stroke="url(#paint2_linear_4_6)"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+            <path
+              class="line"
+              id="line-2"
+              d="M2 10H22"
+              stroke="url(#paint1_linear_4_6)"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+            <path
+              class="line"
+              id="line-3"
+              d="M2 18H22"
+              stroke="url(#paint0_linear_4_6)"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_4_6"
+                x1="2"
+                y1="18.5"
+                x2="22"
+                y2="18.5"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#45B4CC" />
+                <stop offset="1" stop-color="#45FACC" />
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear_4_6"
+                x1="2"
+                y1="10.5"
+                x2="22"
+                y2="10.5"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#45B4CC" />
+                <stop offset="1" stop-color="#45FACC" />
+              </linearGradient>
+              <linearGradient
+                id="paint2_linear_4_6"
+                x1="2"
+                y1="2.5"
+                x2="22"
+                y2="2.5"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#45B4CC" />
+                <stop offset="1" stop-color="#45FACC" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-container">
+          <div class="hero-container__logo">
+            <img src="/assets/icon.png" alt="" />
+          </div>
+          <div class="hero-container__content">
+            <h1>Web <span class="highlighted">Developer</span></h1>
+            <p>
+              Just a simple electrical engineering student with a passion for software development
+            </p>
+            <div class="stacks">
+              <div class="stack">.NET Core</div>
+              <div class="stack">Angular</div>
+            </div>
+            <div class="nav-buttons">
+              <a class="primary-button" href="#portfolio">PROJECTS</a>
+              <a class="primary-button" href="#contact">CONTACT</a>
+            </div>
+          </div>
+        </div>
+        <div class="spacer hero-spacer"></div>
+      </section>
+      <section class="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+          <section class="introduction">
+            <div class="avatar">
+              <img src="/assets/avatar.jpg" alt="Erfan Baghdadi" />
+            </div>
+            <div class="about-me">
+              <h3 class="about-me__title">
+                Hi, I'm <span class="highlighted">Erfan Baghdadi</span>
+              </h3>
+              <p>
+                Dedicated to crafting exceptional web experiences through clean code and innovative
+                design. I thrive on tackling challenging projects and staying current with emerging
+                technologies. Let's build something amazing together.
+              </p>
+              <div class="about-me__buttons">
+                <a class="secondary-button" href="#porfolio">View Projects</a>
+                <a class="primary-button" href="#">Download CV</a>
+              </div>
+            </div>
+          </section>
+          <section class="stats-overview">
+            <div class="stat-card">
+              <div class="stat-card__header">
+                <img src="/assets/icon.png" alt="" />
+                <p class="stat">9</p>
+              </div>
+              <div class="stat-card__body">
+                <h3>Total Projects</h3>
+                <p>
+                  Each project represents a unique challenge solved, from sleek landing pages to
+                  complex web applications that drive real business results
+                </p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__header">
+                <img src="/assets/icon.png" alt="" />
+                <p class="stat">2</p>
+              </div>
+              <div class="stat-card__body">
+                <h3>Years of Experience</h3>
+                <p>
+                  Every project has been a learning opportunity, building expertise in performance
+                  optimization, responsive design, and user-centered development
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="spacer about-spacer"></div>
+      </section>
+      <section class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio__container">
+          <!-- <div class="portfolio__menu">
+            <button class="primary-button">Projects</button>
+            <button class="primary-button">Certificates</button>
+            <button class="primary-button">Stack</button>
+          </div> -->
+          <div class="portfolio__content"></div>
+        </div>
+      </section>
+      <section class="contact"></section>
+    </main>
+    <footer></footer>
+    <template id="projects">
+      <div class="projects__content">
+        <div class="project__card">
+          <img src="assets/preview.jpg" alt="Project 1" class="project__preview" />
+          <div class="project__description">
+            <h4 class="project__title">Project 1</h4>
+            <p class="project__desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non odio perferendis qui
+              accusamus, fugit iusto repudiandae neque a delectus tempora quasi ad blanditiis rem
+              sapiente minus enim repellat ipsam doloribus.
+            </p>
+            <button class="primary-button">View Project</button>
+          </div>
+        </div>
+        <div class="project__card">
+          <img src="assets/preview.jpg" alt="Project 2" class="project__preview" />
+          <div class="project__description">
+            <h4 class="project__title">Project 2</h4>
+            <p class="project__desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quod fugit
+              perspiciatis consectetur quas, quia sunt voluptatem ipsa ab modi. Aperiam eos
+              aspernatur ipsum autem iure labore illo magni officiis!
+            </p>
+            <button class="primary-button">View Project</button>
+          </div>
+        </div>
+        <div class="project__card">
+          <img src="assets/preview.jpg" alt="Project 3" class="project__preview" />
+          <div class="project__description">
+            <h4 class="project__title">Project 3</h4>
+            <p class="project__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus suscipit pariatur
+              totam illum aperiam accusamus dolor. Libero laborum aspernatur nesciunt quisquam autem
+              non molestias ullam cumque recusandae, inventore eligendi. Quia?
+            </p>
+            <button class="primary-button">View Project</button>
+          </div>
+        </div>
+        <div class="project__card">
+          <img src="assets/preview.jpg" alt="Project 4" class="project__preview" />
+          <div class="project__description">
+            <h4 class="project__title">Project 4</h4>
+            <p class="project__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nemo quas cum
+              provident asperiores perferendis ea aliquam animi aspernatur, sequi voluptas dolorum?
+              Possimus doloribus delectus aperiam minus ab corrupti dolorum.
+            </p>
+            <button class="primary-button">View Project</button>
+          </div>
+        </div>
+        <div class="project__card">
+          <img src="assets/preview.jpg" alt="Project 5" class="project__preview" />
+          <div class="project__description">
+            <h4 class="project__title">Project 5</h4>
+            <p class="project__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eius laborum, natus
+              assumenda, totam distinctio, accusamus nulla consequatur aspernatur deserunt porro
+              eum! Modi quidem quis dignissimos odit consequatur earum eligendi?
+            </p>
+            <button class="primary-button">View Project</button>
+          </div>
+        </div>
+        <div class="project__card">
+          <img src="assets/preview.jpg" alt="Project 6" class="project__preview" />
+          <div class="project__description">
+            <h4 class="project__title">Project 6</h4>
+            <p class="project__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, porro aperiam
+              incidunt nostrum rerum rem consequuntur consequatur possimus odio! Consequuntur enim
+              repellat dolorem accusamus praesentium obcaecati dolore asperiores earum ad.
+            </p>
+            <button class="primary-button">View Project</button>
+          </div>
+        </div>
+        <div class="project__card">
+          <img src="assets/preview.jpg" alt="Project 7" class="project__preview" />
+          <div class="project__description">
+            <h4 class="project__title">Project 7</h4>
+            <p class="project__desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse tempora accusamus
+              adipisci fugit, repellat laborum excepturi aliquam culpa reiciendis maiores at, id
+              autem ab iusto eaque, ipsam ipsa nemo reprehenderit.
+            </p>
+            <button class="primary-button">View Project</button>
+          </div>
+        </div>
+        <div class="project__card">
+          <img src="assets/preview.jpg" alt="Project 8" class="project__preview" />
+          <div class="project__description">
+            <h4 class="project__title">Project 8</h4>
+            <p class="project__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sint accusamus nisi!
+              Iste nisi officiis esse quo commodi fugit totam quis ratione minus, voluptas quod
+              recusandae veniam eum facilis debitis.
+            </p>
+            <button class="primary-button">View Project</button>
+          </div>
+        </div>
+        <div class="project__card">
+          <img src="assets/preview.jpg" alt="Project 9" class="project__preview" />
+          <div class="project__description">
+            <h4 class="project__title">Project 9</h4>
+            <p class="project__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente veritatis expedita
+              voluptates maxime ut possimus modi vero. Consequatur dolorum velit commodi! Eligendi
+              ab neque enim temporibus dolore iusto? Aliquid, amet.
+            </p>
+            <button class="primary-button">View Project</button>
+          </div>
+        </div>
+        <div class="project__card">
+          <img src="assets/preview.jpg" alt="Project 10" class="project__preview" />
+          <div class="project__description">
+            <h4 class="project__title">Project 10</h4>
+            <p class="project__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente veritatis expedita
+              voluptates maxime ut possimus modi vero. Consequatur dolorum velit commodi! Eligendi
+              ab neque enim temporibus dolore iusto? Aliquid, amet.
+            </p>
+            <button class="primary-button">View Project</button>
+          </div>
+        </div>
+      </div>
+    </template>
+    <template id="certificates">
+      <div class="certificates__content"></div>
+    </template>
+    <template id="stack">
+      <div class="stack__content"></div>
+    </template>
+  </body>
+</html>

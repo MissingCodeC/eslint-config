@@ -1,0 +1,56 @@
+{
+  "name": "@missingcodec/eslint-config",
+  "description": "Noa's eslint config",
+  "version": "1.0.0",
+  "author": "Noa <erfan.baghdadi26@gmail.com> (https://github.com/missingcodec/)",
+  "homepage": "https://github.com/missingcodec/eslint-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/missingcodec/eslint-config.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "javascript",
+    "typescript",
+    "eslint",
+    "eslint-config",
+    "tseslint",
+    "tseslint-config",
+    "angular"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "lint": "eslint",
+    "inspect": "npx @eslint/config-inspector@latest --config eslint.config.ts"
+  },
+  "dependencies": {
+    "@prettier/plugin-xml": "^3.4.2",
+    "@stylistic/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.36.0",
+    "@typescript-eslint/parser": "^8.36.0",
+    "eslint-plugin-prettier": "^5.5.1",
+    "globals": "^16.3.0",
+    "typescript-eslint": "^8.36.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "eslint": "^9.30.1",
+    "prettier": "^3.6.2",
+    "tsdown": "^0.12.9",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
