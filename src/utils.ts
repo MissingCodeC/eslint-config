@@ -1,23 +1,11 @@
-import { readFile } from 'node:fs/promises'
-
-// TODO: build a prefered type definition rule to always use Type unless it contains a method
-interface PackageDeps {
-  dependencies: Record<string, string>
-  devDependencies: Record<string, string>
-}
-
-export async function isPackageInstalled(pkgName: string): Promise<boolean> {
+export function isPackageAvailable(pkgName : string) : boolean {
   try {
-    const pkg = JSON.parse(await readFile('package.json', 'utf-8')) as PackageDeps
-    const deps = { ...pkg.dependencies, ...pkg.devDependencies }
-
-    return pkgName in deps
-  } catch {
-    return false
-  }
+    require.resolve(pkgName)
+    return true
+  } catch { return false }
 }
 
-export function isRunningInEditor(): boolean {
+export function isRunningInEditor() : boolean {
   if (process.env.CI || process.env.GITHUB_ACTIONS) return false
   if (process.env.GIT_PARAMS || process.env.VSCODE_GIT_COMMAND) return false
 
@@ -30,19 +18,19 @@ export function isRunningInEditor(): boolean {
 }
 
 export const plainParser = {
-  meta: {
-    name: 'plain-parser',
+  meta : {
+    name : 'plain-parser',
   },
-  parseForESLint: (text: string) => ({
-    ast: {
-      type: 'Program',
-      body: [],
-      comments: [],
-      loc: { start: 0, end: text.length },
-      range: [0, text.length],
-      tokens: [],
+  parseForESLint : (text : string) => ({
+    ast          : {
+      type     : 'Program',
+      body     : [],
+      comments : [],
+      loc      : { start : 0, end : text.length },
+      range    : [0, text.length],
+      tokens   : [],
     },
-    scopeManager: null,
-    visitorKeys: {},
+    scopeManager : null,
+    visitorKeys  : {},
   }),
 }
